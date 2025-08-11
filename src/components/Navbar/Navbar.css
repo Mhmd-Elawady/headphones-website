@@ -1,0 +1,51 @@
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.primary-color {
+  color: #52483e !important;
+}
+
+.btn-gradient {
+  background: linear-gradient(180deg, #52483e 0%, #8b8782 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(82, 72, 62, 0.3);
+  font-size: 1rem;
+}
+
+.btn-gradient:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(82, 72, 62, 0.4);
+}
+
+.btn-outline-primary {
+  background: transparent;
+  color: #52483e;
+  border: 2px solid #52483e;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-outline-primary:hover {
+  background: #52483e;
+  color: white;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  .btn-gradient {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

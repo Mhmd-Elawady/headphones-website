@@ -1,0 +1,36 @@
+.details-section {
+  background-color: #f5f5f5;
+}
+
+.details-title {
+  font-weight: bold;
+  color: #4a403a;
+  padding-top: 10px;
+}
+
+.details-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  padding-top: 10px;
+}
+
+.details-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.details-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .details-image {
+    padding: 5px 0;
+    
+  }
+}
