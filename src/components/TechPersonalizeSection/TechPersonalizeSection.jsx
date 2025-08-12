@@ -1,6 +1,8 @@
 
 import React, { useState } from "react";
 import "./TechPersonalizeSection.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import BlueImg from "../../assets/Blueimage.png";
 import greenImg from "../../assets/Headphone Images(1).png";
@@ -11,7 +13,7 @@ export default function TechPersonalizeSection() {
     <>
       <div className="container carousel-section">
       <h4 className="fw-bold mb-4 color-text">Color</h4>
-      <img
+      <LazyLoadImage
         src={currentImage}
         alt="Headphone"
         className="headphone-img img-fluid d-flex justify-content-center  mb-4"

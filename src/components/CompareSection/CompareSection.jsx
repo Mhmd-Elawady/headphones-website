@@ -12,6 +12,8 @@ import BatteryCharging from "../../assets/BatteryCharging.svg";
 import Drop from "../../assets/Drop.svg";
 import Microphone from "../../assets/Microphone.svg";
 import Equalizer from "../../assets/Equalizer.svg";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import headphoneImg from "../../assets/headphonesGreen.png";
 import earbudsImg from "../../assets/headphones-green.png";
@@ -25,13 +27,13 @@ export default function CompareSection() {
       specs: [
         {
           icon: (
-            <img src={CpuSvg} alt="CPU" style={{ width: 24, height: 24 }} />
+            <LazyLoadImage src={CpuSvg} alt="CPU" style={{ width: 24, height: 24 }} />
           ),
           text: "R1 Chip",
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={SpeakerSimpleSlash}
               alt="Noise Cancellation"
               style={{ width: 24, height: 24 }}
@@ -41,7 +43,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={UserSound}
               alt="Personalized Spatial Audio"
               style={{ width: 24, height: 24 }}
@@ -51,7 +53,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Equalizer}
               alt="Lossless Audio"
               style={{ width: 24, height: 24 }}
@@ -61,7 +63,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Minus}
               alt="Lossless Audio"
               style={{ width: 24, height: 24 }}
@@ -71,7 +73,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Minus}
               alt="Lossless Audio"
               style={{ width: 24, height: 24 }}
@@ -81,7 +83,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={BatteryCharging}
               alt="Battery"
               style={{ width: 24, height: 24 }}
@@ -91,7 +93,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Minus}
               alt="Lossless Audio"
               style={{ width: 24, height: 24 }}
@@ -101,7 +103,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Microphone}
               alt="Microphones"
               style={{ width: 24, height: 24 }}
@@ -118,13 +120,13 @@ export default function CompareSection() {
       specs: [
         {
           icon: (
-            <img src={CpuSvg} alt="CPU" style={{ width: 24, height: 24 }} />
+            <LazyLoadImage src={CpuSvg} alt="CPU" style={{ width: 24, height: 24 }} />
           ),
           text: "R1 Chip",
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={SpeakerSimpleSlash}
               alt="Noise Cancellation"
               style={{ width: 24, height: 24 }}
@@ -134,7 +136,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={UserSound}
               alt="Personalized Spatial Audio"
               style={{ width: 24, height: 24 }}
@@ -144,7 +146,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Minus}
               alt="Lossless Audio"
               style={{ width: 24, height: 24 }}
@@ -154,7 +156,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Ear}
               alt="Hearing Test"
               style={{ width: 24, height: 24 }}
@@ -164,7 +166,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={HandTap}
               alt="Touch Sensor"
               style={{ width: 24, height: 24 }}
@@ -174,7 +176,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={BatteryCharging}
               alt="Battery"
               style={{ width: 24, height: 24 }}
@@ -184,7 +186,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Drop}
               alt="Water Resistant"
               style={{ width: 24, height: 24 }}
@@ -194,7 +196,7 @@ export default function CompareSection() {
         },
         {
           icon: (
-            <img
+            <LazyLoadImage
               src={Microphone}
               alt="Microphones"
               style={{ width: 24, height: 24 }}
@@ -223,7 +225,7 @@ export default function CompareSection() {
                 <h5 className="fw-bold mb-3">{product.title}</h5>
 
                 <div className="flex-grow-1 d-flex align-items-center justify-content-center">
-                  <img
+                  <LazyLoadImage
                     src={product.img}
                     alt={product.title}
                     className="img-fluid"

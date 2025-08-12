@@ -1,5 +1,8 @@
 import React from "react";
 import { PiWaveformLight } from "react-icons/pi";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import "./Footer.css";
 export default function Footer() {
   return (
@@ -22,9 +25,9 @@ export default function Footer() {
           </div>
           <div className="footer-right">
             © 2025 Resonance. All rights reserved.
-            <img src="../src\assets\XLogo.png" alt="" />
-            <img src="../src\assets\MetaLogo.png" alt="" />
-            <img src="../src\assets\DiscordLogo.png" alt="" />
+            <LazyLoadImage src="../src\assets\XLogo.png" alt="" />
+            <LazyLoadImage src="../src\assets\MetaLogo.png" alt="" />
+            <LazyLoadImage src="../src\assets\DiscordLogo.png" alt="" />
           </div>
         </div>
       </div>

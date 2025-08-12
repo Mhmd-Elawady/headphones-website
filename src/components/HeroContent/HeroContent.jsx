@@ -1,5 +1,8 @@
 import React from "react";
 import "./HeroContent.css";
+import headphoneImg from "../../assets/Headphone-Main.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function HeroContent() {
   return (
@@ -11,9 +14,9 @@ export default function HeroContent() {
         <h1 className="heading">Resonance</h1>
 
         <div className="headphone-container">
-          <img
+          <LazyLoadImage
             className="headphone-image"
-            src="../src/assets/Headphone Image.png"
+            src={headphoneImg}
             alt="Resonance Aura Pro II Headphones"
           />
         </div>

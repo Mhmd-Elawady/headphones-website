@@ -100,7 +100,7 @@
 }
 
 @media (min-width: 576px) {
-  .hero-buttons {
+   .hero-buttons {
     flex-direction: row;
   }
 }
@@ -109,16 +109,41 @@
   .Hero-Content {
     padding: 1rem;
   }
-
+  .hero-content-container{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;          
+    text-align: center;   
+    padding-top: 20px;
+  }
   .heading {
-    font-size: 4rem; 
+
+   font-size: 3rem;      
+    position: relative;
+    top: 0;           
+    left: 50%;
+    transform: translateX(-50%);  
+    margin: 0;
+   
   }
 
   .heading2 {
-    font-size: 3rem;
-    margin-top: 0.5rem;
-  }
 
+  font-size: 2rem;
+    position: relative;
+    top: 10px;           
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+   .headphone-image{
+    margin-top: 120%;
+  } 
+   
+
+  
   .headphone-container {
     width: clamp(250px, 80vw, 400px);
   }

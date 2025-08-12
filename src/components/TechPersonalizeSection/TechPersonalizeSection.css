@@ -48,12 +48,33 @@
   margin-top: 0;
 }
 
+
+
 @media (max-width: 768px) {
-  .headphone-img {
-    max-width: 220px;
-  }
+  
   .color-btn {
     width: 35px;
     height: 35px;
   }
+    .headphone-img {
+    max-width: 220px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .carousel-section {
+    padding:20px 10px;  
+  }
+
+  .headphone-img {
+    max-width: 80%; 
+  }
+
+  .color-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  
 }

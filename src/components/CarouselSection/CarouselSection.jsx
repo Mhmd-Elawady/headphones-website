@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import BlueImg from "../../assets/Blueimage.png";
 import greenImg from "../../assets/Headphone Images(1).png";
 import PinkImg from "../../assets/Pinkimage.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import "./CarouselSection.css";
 export default function CarouselSection() {
   const [color, setColor] = useState("green");
@@ -29,18 +32,18 @@ export default function CarouselSection() {
       </div>
 
       <div className="Headphone-Carousel d-flex justify-content-center align-items-center w-100 position-relative">
-        <img
+        <LazyLoadImage
           src={headphones.Blue}
           alt="Yellow Headphone"
           className="blur-headphone position-absolute start-0 d-none d-md-block"
         />
-        <img
+        <LazyLoadImage
           src={headphones.Pink}
           alt="Red Headphone"
           className="blur-headphone position-absolute end-0 d-none d-md-block"
         />
 
-        <img
+        <LazyLoadImage
           src={headphones[color]}
           alt={color}
           className="main-headphone img-fluid"
